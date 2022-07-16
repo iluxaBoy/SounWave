@@ -1,0 +1,130 @@
+.home-main-sec{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.home-main-sec .img-wrap{
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.home-main-sec .lady-img{
+  background: url("image1.png");
+  flex-grow: 1;
+  max-height: 70vh;
+  min-width: 30vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.home-main-sec .call-to-action{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  align-self: center;
+}
+
+@media (max-width: 1200px) {
+  .home-main-sec .img-wrap{
+    display: none;
+  }
+  .home-main-sec{
+    justify-content: center;
+  }
+}
+
+.home-p-c-1{
+  position: absolute;
+  width: 35vw;
+  height: 35vw;
+  border-radius: 50%;
+  background-color: rgba(188, 58, 176, 30%);
+  top: 10vw;
+  left: 11vw;
+  z-index: -3;
+}
+
+.home-p-c-2{
+  position: absolute;
+  overflow: hidden;
+  width: 25vw;
+  height: 25vw;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.home-p-c-2::before{
+  content: '';
+  transform: translate(40%, 20%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(23, 98, 167, 30%);
+}
+
+.home-p-c-3{
+  position: absolute;
+  overflow: hidden;
+  width: 25vw;
+  height: 25vw;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
+.home-p-c-3::before{
+  content: '';
+  transform: translate(10%, 60%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(188, 58, 176, 30%);
+}
+
+
+.home-p-c-4{
+  position: absolute;
+  overflow: hidden;
+  width: 35vw;
+  height: 35vw;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.home-p-c-4::before{
+  content: '';
+  transform: translate(-10%, 20%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(23, 98, 167, 30%);
+}
+
+
+.home-p-c-5{
+  position: absolute;
+  overflow: hidden;
+  width: 35vw;
+  height: 35vw;
+  bottom: 0;
+  left: 16vw;
+  z-index: -2;
+}
+.home-p-c-5::before{
+  content: '';
+  transform: translate(0, 50%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(98, 31, 165, 30%);
+}

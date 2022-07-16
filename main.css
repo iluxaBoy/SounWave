@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background: #2F303A;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  min-height: 100vh;
+}
+
+.full-hight-grow{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer{
+  height: 70px;
+  background-color: #202027;
+  font-weight: bold;
+}
+
+.social-link img{
+  width: 1em;
+  margin-right: .25rem;
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-grow: 1;
+}
+
+.brand-logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.15rem;
+  color: white;
+  text-decoration: none;
+}
+
+.brand-logo-name{
+  margin-left: 1rem;
+}
+
+.main-nav ul, .footer-nav ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-nav a, .footer-nav a{
+  padding: 1rem;
+}
+
+.main-nav a:hover, .footer-nav a:hover{
+  color: #adadad;
+}
+
+.main-header, .main-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header{
+  height: 140px;
+}
+
+.title{
+  font-weight: 400;
+  font-size: 3em;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.subtitle{
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+}
+
+.btn{
+  color: white;
+  background-color: #1762A7;
+  padding: .75rem 1.5rem;
+  border-radius: 2rem;
+  font-size: .9rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: #2180d8;
+}
+
+.btn:focus{
+  background-color: #2796ff;
+}
